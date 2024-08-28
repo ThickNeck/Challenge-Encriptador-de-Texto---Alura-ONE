@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
+
+body {
+  background-color: #f3f5fc;
+}
+
+.containerMaster {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  padding-top: 4%;
+  padding-left: 6%;
+}
+
+.seccion1 {
+  width: 66.6666666666%;
+}
+
+.containerEncriptacion {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 52.5%;
+  height: 85%;
+  left: 12%;
+  top: 10%;
+}
+
+.containerTexto {
+  height: 90%;
+}
+
+.texto {
+  background-color: #F3F5FC;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: none;
+}
+
+.texto::placeholder {
+  color: #0A3871;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.texto:focus,
+.texto:active {
+  color: #0A3871;
+  border: none;
+  outline: none;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.terminos {
+  padding-top: 1%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.terminos img {
+  size: 16px;
+}
+
+.terminos p {
+  color: #495057;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.botones {
+  padding-top: 1%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.btnEncriptar {
+  border: none;
+  background-color: #0A3871;
+  color: white;
+  width: 50%;
+  padding: 2%;
+  border-radius: 24px;
+}
+
+.btnDesencriptar {
+  border-color: #0A3871;
+  color: #0A3871;
+  background-color: #D8DFE8;
+  border-width: 1px;
+  border-style: solid;
+  width: 50%;
+  padding: 2%;
+  border-radius: 24px;
+}
+
+.seccion2 {
+  width: 33.3333333333%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 32px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.8);
+  width: 83.3333333333%;
+  height: 92.2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+
+.containerEncriptado {
+  height: 90%;
+  width: 84%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textoResultado {
+  color: #495057;
+  height: 90%;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 400;
+  resize: none;
+  border: none;
+}
+
+.textoResultado:active,
+.textoResultado:focus {
+  color: #495057;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.btnCopiar {
+  color: #0A3871;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0A3871;
+  background-color: #D8DFE8;
+  width: 100%;
+  padding: 4%;
+  border-radius: 24px;
+}
+
+.munieco {
+  width: 84%;
+}
+
+.mensajeSinEncriptar {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 84%;
+  gap: 16px;
+}
+
+.mensajeSinEncriptar h2 {
+  color: #343A40;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.mensajeSinEncriptar p {
+  color: #495057;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Responsividad tablet */
+
+@media (max-width: 48rem) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+  }
+
+  body {
+    background-color: #f3f5fc;
+  }
+
+  .containerMaster {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .seccion1 {
+    position: inherit;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    padding-top: 6.25%;
+    padding-left: 5.2%;
+    padding-bottom: 12%;
+    align-self: flex-start;
+  }
+
+  .containerEncriptacion {
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+  }
+
+  .seccion2 {
+    width: 100%;
+    height: 20vh;
+  }
+
+  .munieco {
+    visibility: hidden;
+    display: none;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    height: 90%;
+  }
+
+  .containerEncriptado {
+    width: 90%;
+  }
+
+  .mensajeSinEncriptar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+}
+
+/* Responcividad celular */
+
+@media (max-width: 30rem) {
+  .botones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btnEncriptar,
+  .btnDesencriptar {
+    width: 100%;
+  }
+}

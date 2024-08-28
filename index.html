@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Encriptador de texto!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="Img/Logo.png" type="image/x-icon">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+
+<div class="containerMaster">
+  <div class="seccion1">
+    <img class="logo" src="Img/Logo.png" alt="Alura LATAM">
+
+    <div class="containerEncriptacion">
+    
+      <div class="containerTexto">
+        <textarea class="texto" name="texto" cols="30" rows="10" placeholder="Ingresa el texto aquí..."></textarea>
+      </div>
+
+      <div class="terminos">
+        <img src="Img/Vector.png" alt="Atención">
+        <p>Solo letras minúsculas y sin acentos.</p>
+      </div>
+      
+      <div class="botones">
+        <button class="btnEncriptar">Encriptar</button>
+        <button class="btnDesencriptar">Desencriptar</button>
+      </div>  
+    </div>
+
+  </div>
+  
+  <div class="seccion2">
+    <div class="card">
+      
+      <div class="containerEncriptado">
+        <textarea class="textoResultado" name="textoResultado" readonly></textarea>
+        <button class="btnCopiar">Copiar</button>
+      </div>
+
+        <img class="munieco" src="img/muñeco.png" alt=":O"/>
+        
+        <div class="mensajeSinEncriptar" id="mensajeSinEncriptar">
+          <h2>Ningún mensaje fue encontrado.</h2>
+          <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+        </div>        
+
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
